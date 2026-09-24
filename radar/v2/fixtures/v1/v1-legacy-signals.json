@@ -1,0 +1,20 @@
+{
+  "title": "V1 legacy action and signal coverage",
+  "date": "2026-09-23",
+  "radar": "dev",
+  "signalCount": 13,
+  "highSignalCount": 2,
+  "actionableCount": 2,
+  "actionRequired": 1,
+  "verdict": "Fixture preserving legacy count semantics.",
+  "highlights": [
+    { "title": "Legacy action", "type": "tool", "signal": "critical", "action": "action", "topic": "developer-tools", "sourceLevel": "official", "sourceName": "Vendor", "sourceUrl": "https://example.com/action" },
+    { "title": "Test action", "type": "tool", "signal": "high", "action": "test", "topic": "developer-tools", "sourceLevel": "ecosystem", "sourceName": "Project", "sourceUrl": "https://example.com/test" },
+    { "title": "Read action", "type": "tool", "signal": "medium", "action": "read", "topic": "developer-tools", "sourceLevel": "research", "sourceName": "Paper", "sourceUrl": "https://example.com/read" },
+    { "title": "Watch action", "type": "tool", "signal": "low", "action": "watch", "topic": "developer-tools", "sourceLevel": "media", "sourceName": "Publication", "sourceUrl": "https://example.com/watch" },
+    { "title": "Ignore action", "type": "tool", "signal": "high", "action": "ignore", "topic": "developer-tools", "sourceLevel": "community", "sourceName": "Forum", "sourceUrl": "https://example.com/ignore" }
+  ],
+  "topics": ["developer-tools"],
+  "confidence": "medium",
+  "publish": true
+}

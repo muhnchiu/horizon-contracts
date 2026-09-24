@@ -1,0 +1,16 @@
+{
+  "title": "V1 explore and private report",
+  "date": "2026-09-24",
+  "radar": "ai",
+  "signalCount": 4,
+  "highSignalCount": 0,
+  "actionableCount": 0,
+  "actionRequired": 0,
+  "verdict": "Do not publish this fixture.",
+  "highlights": [
+    { "title": "Explore action", "type": "model", "signal": "low", "action": "explore", "topic": "frontier-models", "sourceLevel": "community", "sourceName": "Community", "sourceUrl": "https://example.com/explore" }
+  ],
+  "topics": ["frontier-models"],
+  "confidence": "low",
+  "publish": false
+}

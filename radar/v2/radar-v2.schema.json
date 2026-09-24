@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/muhnchiu/script-manager/contracts/radar-v2/radar-v2.schema.json",
+  "title": "Horizon Radar Contract V2",
+  "description": "Canonical public Radar V2 schema. Cross-field count equations are documented here and are implemented by the Phase 3 Validator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scoreVersion",
+    "title",
+    "date",
+    "radar",
+    "signalCount",
+    "highSignalCount",
+    "actionableCount",
+    "verdict",
+    "topics",
+    "highlights",
+    "reportConfidence",
+    "publish"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "scoreVersion": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "date": { "type": "string", "format": "date" },
+    "radar": { "$ref": "#/$defs/radarId" },
+    "signalCount": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Phase 3 invariant: exactly highlights.length"
+    },
+    "highSignalCount": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Phase 3 invariant: count(highlights where signal == high)"
+    },
+    "actionableCount": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Phase 3 invariant: count(highlights where action is adopt or test)"
+    },
+    "actionRequired": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "Temporary compatibility alias only: count(adopt); omit from canonical V2 when consumers no longer need it"
+    },
+    "verdict": { "type": "string", "minLength": 1 },
+    "topics": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/topicSlug" }
+    },
+    "highlights": {
+      "type": "array",
+      "maxItems": 5,
+      "items": { "$ref": "#/$defs/highlight" }
+    },
+    "reportConfidence": { "$ref": "#/$defs/confidence" },
+    "publish": { "type": "boolean" }
+  },
+  "$defs": {
+    "radarId": { "type": "string", "enum": ["ai", "dev", "skill", "app", "security"] },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+    "sourceLevel": { "type": "string", "enum": ["official", "research", "ecosystem", "media", "community"] },
+    "topicSlug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "highlight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "type",
+        "signal",
+        "score",
+        "action",
+        "topic",
+        "primaryRadar",
+        "entity",
+        "eventType",
+        "eventKey",
+        "firstSeen",
+        "lastSeen",
+        "confidence",
+        "source"
+      ],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "signal": { "type": "string", "enum": ["high", "medium", "low"] },
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "action": { "type": "string", "enum": ["adopt", "test", "read", "watch", "ignore"] },
+        "topic": { "$ref": "#/$defs/topicSlug" },
+        "primaryRadar": { "$ref": "#/$defs/radarId" },
+        "relatedRadars": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/radarId" },
+          "default": []
+        },
+        "whyItMatters": { "type": "string", "minLength": 1 },
+        "entity": { "type": "string", "minLength": 1 },
+        "eventType": {
+          "type": "string",
+          "enum": ["release", "product-update", "security-advisory", "vulnerability", "research-publication", "adoption-signal", "policy-change", "other"]
+        },
+        "eventKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "firstSeen": { "type": "string", "format": "date" },
+        "lastSeen": { "type": "string", "format": "date" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "source": { "$ref": "#/$defs/source" },
+        "overrideReason": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "signal": { "enum": ["high", "medium"] } }, "required": ["signal"] },
+          "then": { "required": ["whyItMatters"] }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "name"],
+      "properties": {
+        "level": { "$ref": "#/$defs/sourceLevel" },
+        "name": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }
+      }
+    }
+  },
+  "x-radar-count-semantics": {
+    "signalCount": "highlights.length",
+    "highSignalCount": "count(highlight.signal == high)",
+    "actionableCount": "count(highlight.action in [adopt, test])"
+  }
+}

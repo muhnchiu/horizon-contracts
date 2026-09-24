@@ -1,0 +1,8 @@
+{
+  "contractVersion": "2.0.0",
+  "schemaVersion": 2,
+  "canonicalOwner": "muhnchiu/script-manager",
+  "canonicalSchema": "contracts/radar-v2/radar-v2.schema.json",
+  "fixtureSetVersion": "2.0.0",
+  "consumerSync": "Horizon consumes this directory as a Git submodule pinned to an exact script-manager commit SHA; floating refs and independently edited schema copies are prohibited."
+}
