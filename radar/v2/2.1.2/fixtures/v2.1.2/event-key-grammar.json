@@ -1,0 +1,28 @@
+{
+  "contractVersion": "2.1.2",
+  "schemaVersion": 2,
+  "entityGrammar": "^[a-z0-9][a-z0-9._-]*$",
+  "canonicalEventTypeGrammar": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+  "eventIdentifierGrammar": "^[a-z0-9][a-z0-9._-]*$",
+  "valid": [
+    "deepseek-v4.1:model-release:initial",
+    "glm-5.2-openrouter:pricing-change:pricing",
+    "qwen2.5:model-release:initial",
+    "node.js:version-update:22.0.0",
+    "foo_bar:tool-discovery:initial"
+  ],
+  "invalid": [
+    "DeepSeek:model-release:initial",
+    "deep seek:model-release:initial",
+    "deepseek/v4:model-release:initial",
+    "deepseek:v4:model-release:initial",
+    ".deepseek:model-release:initial",
+    "_deepseek:model-release:initial",
+    "-deepseek:model-release:initial",
+    "深度求索:model-release:initial"
+  ],
+  "notes": [
+    "Exactly two colons are permitted as segment separators.",
+    "tool-discovery is included only as a syntactic event-key segment test; this fixture does not add it to the canonical event type registry."
+  ]
+}

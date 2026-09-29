@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/muhnchiu/script-manager/contracts/radar-v2/2.1.2/radar-v2.schema.json",
+  "title": "Horizon Radar Contract 2.1.2",
+  "description": "Additive Event and Observation exchange fields for Radar schema version 2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "scoreVersion",
+    "title",
+    "date",
+    "radar",
+    "signalCount",
+    "highSignalCount",
+    "actionableCount",
+    "verdict",
+    "topics",
+    "highlights",
+    "reportConfidence",
+    "publish"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "scoreVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Radar report/content date; distinct from all event and observation timestamps."
+    },
+    "radar": {
+      "$ref": "#/$defs/radarId"
+    },
+    "signalCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "highSignalCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "actionableCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "actionRequired": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "verdict": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/topicSlug"
+      }
+    },
+    "highlights": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/highlight"
+      }
+    },
+    "reportConfidence": {
+      "$ref": "#/$defs/confidence"
+    },
+    "publish": {
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "radarId": {
+      "type": "string",
+      "enum": [
+        "ai",
+        "dev",
+        "skill",
+        "app",
+        "security"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "signal": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "adopt",
+        "test",
+        "read",
+        "watch",
+        "ignore"
+      ]
+    },
+    "sourceLevel": {
+      "type": "string",
+      "enum": [
+        "official",
+        "research",
+        "ecosystem",
+        "media",
+        "community"
+      ]
+    },
+    "sourceAuthority": {
+      "type": "string",
+      "enum": [
+        "official",
+        "primary",
+        "secondary",
+        "community"
+      ]
+    },
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "release",
+        "model-release",
+        "skill-release",
+        "research-release",
+        "version-update",
+        "pricing-change",
+        "capability-change",
+        "security-cve",
+        "security-cisa-kev",
+        "security-advisory",
+        "funding",
+        "incident",
+        "documentation"
+      ]
+    },
+    "eventState": {
+      "type": "string",
+      "enum": [
+        "NEW",
+        "DUPLICATE",
+        "UPDATE"
+      ]
+    },
+    "topicSlug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "eventKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*:[a-z0-9]+(?:-[a-z0-9]+)*:[a-z0-9][a-z0-9._-]*$"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level",
+        "name"
+      ],
+      "properties": {
+        "level": {
+          "$ref": "#/$defs/sourceLevel"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourcePublishedAt": {
+          "$ref": "#/$defs/dateTime",
+          "description": "Original publication time of this source evidence."
+        },
+        "sourceAuthority": {
+          "$ref": "#/$defs/sourceAuthority"
+        }
+      }
+    },
+    "highlight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "type",
+        "signal",
+        "score",
+        "action",
+        "topic",
+        "entity",
+        "eventKey",
+        "canonicalEventType",
+        "eventState",
+        "materialChange",
+        "observedAt",
+        "duplicate",
+        "confidence",
+        "sources"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "signal": {
+          "$ref": "#/$defs/signal"
+        },
+        "score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "action": {
+          "$ref": "#/$defs/action"
+        },
+        "topic": {
+          "$ref": "#/$defs/topicSlug"
+        },
+        "entity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eventKey": {
+          "$ref": "#/$defs/eventKey"
+        },
+        "canonicalEventType": {
+          "$ref": "#/$defs/eventType"
+        },
+        "eventState": {
+          "$ref": "#/$defs/eventState"
+        },
+        "materialChange": {
+          "type": "boolean"
+        },
+        "observedAt": {
+          "$ref": "#/$defs/dateTime",
+          "description": "Time this observation was made by Radar."
+        },
+        "eventOccurredAt": {
+          "$ref": "#/$defs/dateTime",
+          "description": "Best-effort real-world event time; not derived from sourcePublishedAt."
+        },
+        "duplicate": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "whyItMatters": {
+          "type": "string",
+          "minLength": 1
+        },
+        "overrideReason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "eventState": {
+                "const": "NEW"
+              }
+            },
+            "required": [
+              "eventState"
+            ]
+          },
+          "then": {
+            "properties": {
+              "duplicate": {
+                "const": false
+              },
+              "materialChange": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "eventState": {
+                "const": "DUPLICATE"
+              }
+            },
+            "required": [
+              "eventState"
+            ]
+          },
+          "then": {
+            "properties": {
+              "duplicate": {
+                "const": true
+              },
+              "materialChange": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "eventState": {
+                "const": "UPDATE"
+              }
+            },
+            "required": [
+              "eventState"
+            ]
+          },
+          "then": {
+            "properties": {
+              "duplicate": {
+                "const": false
+              },
+              "materialChange": {
+                "const": true
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "signal": {
+                "enum": [
+                  "high",
+                  "medium"
+                ]
+              }
+            },
+            "required": [
+              "signal"
+            ]
+          },
+          "then": {
+            "required": [
+              "whyItMatters"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "x-radar-count-semantics": {
+    "signalCount": "highlights.length",
+    "highSignalCount": "count(highlights where signal == high)",
+    "actionableCount": "count(highlights where action in [adopt, test])"
+  }
+}
