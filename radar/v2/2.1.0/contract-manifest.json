@@ -26,5 +26,5 @@
     "test/contract.test.mjs",
     "test/distribution.test.mjs"
   ],
-  "artifactSha256": "fa21f4a9da5428a0a348eccadebd64934a9336f47d94ccbc3b10ca6a104976d1"
+  "artifactSha256": "7ff640854b6ede9e7e03307628825951063f34ca84f1c0a92f29857b4bade400"
 }

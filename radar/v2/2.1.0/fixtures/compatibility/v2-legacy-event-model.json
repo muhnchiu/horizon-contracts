@@ -19,7 +19,7 @@
     "primaryRadar": "ai",
     "relatedRadars": [],
     "entity": "sample-model",
-    "eventType": "model-release",
+    "eventType": "release",
     "eventKey": "sample-model-model-release-v1",
     "firstSeen": "2026-09-29",
     "lastSeen": "2026-09-29",
