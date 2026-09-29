@@ -1,0 +1,14 @@
+{
+  "title": "Historical V1 fixture",
+  "date": "2026-09-29",
+  "radar": "ai",
+  "signalCount": 9,
+  "highSignalCount": 4,
+  "actionableCount": 3,
+  "actionRequired": 2,
+  "verdict": "Historical count and date semantics remain unchanged.",
+  "highlights": [],
+  "topics": [],
+  "confidence": "high",
+  "publish": false
+}

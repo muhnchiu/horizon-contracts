@@ -1,0 +1,30 @@
+{
+  "contractVersion": "2.1.0",
+  "schemaVersion": 2,
+  "canonicalOwner": "muhnchiu/script-manager",
+  "canonicalCommit": "7f166e7b0765e7f727654a4397e06b8f92690ca7",
+  "canonicalSchema": "contracts/radar-v2/2.1.0/radar-v2.schema.json",
+  "distributionRepository": "muhnchiu/horizon-contracts",
+  "distributionPath": "radar/v2/2.1.0/",
+  "fixtureSetVersion": "2.1.0",
+  "compatibility": [
+    "historical-v1",
+    "2.0.0",
+    "2.1.0"
+  ],
+  "artifactFiles": [
+    "README.md",
+    "DISTRIBUTION.md",
+    "types.d.ts",
+    "normalize.mjs",
+    "validator.mjs",
+    "radar-v2.schema.json",
+    "fixtures/compatibility/v1-legacy.json",
+    "fixtures/compatibility/v2-legacy-event-model.json",
+    "fixtures/v2.1/valid-events.json",
+    "fixtures/v2.1/invalid-cases.json",
+    "test/contract.test.mjs",
+    "test/distribution.test.mjs"
+  ],
+  "artifactSha256": "fa21f4a9da5428a0a348eccadebd64934a9336f47d94ccbc3b10ca6a104976d1"
+}

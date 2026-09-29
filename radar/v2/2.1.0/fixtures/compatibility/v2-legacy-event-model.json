@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "scoreVersion": "2.0",
+  "title": "Contract 2.0 compatibility fixture",
+  "date": "2026-09-29",
+  "radar": "ai",
+  "signalCount": 1,
+  "highSignalCount": 0,
+  "actionableCount": 0,
+  "verdict": "Contract 2.0 data remains interpreted by its pinned 2.0 artifact.",
+  "topics": [],
+  "highlights": [{
+    "title": "Legacy event field set",
+    "type": "model",
+    "signal": "low",
+    "score": 20,
+    "action": "watch",
+    "topic": "agent-systems",
+    "primaryRadar": "ai",
+    "relatedRadars": [],
+    "entity": "sample-model",
+    "eventType": "model-release",
+    "eventKey": "sample-model-model-release-v1",
+    "firstSeen": "2026-09-29",
+    "lastSeen": "2026-09-29",
+    "confidence": "high",
+    "source": { "level": "official", "name": "Vendor" }
+  }],
+  "reportConfidence": "high",
+  "publish": false
+}
