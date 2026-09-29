@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "scoreVersion": "2.0",
+  "title": "Radar V2.1 Event and Observation fixture",
+  "date": "2026-09-29",
+  "radar": "ai",
+  "signalCount": 3,
+  "highSignalCount": 0,
+  "actionableCount": 0,
+  "verdict": "Valid event-state and time-semantics fixture.",
+  "topics": ["agent-systems"],
+  "reportConfidence": "high",
+  "publish": false,
+  "highlights": [
+    {
+      "title": "New model release",
+      "type": "model",
+      "signal": "low",
+      "score": 20,
+      "action": "watch",
+      "topic": "agent-systems",
+      "entity": "sample-model",
+      "eventKey": "sample-model:model-release:v1",
+      "canonicalEventType": "model-release",
+      "eventState": "NEW",
+      "materialChange": false,
+      "duplicate": false,
+      "observedAt": "2026-09-29T08:45:00+08:00",
+      "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+      "confidence": "high",
+      "sources": [
+        { "level": "official", "name": "Vendor announcement", "url": "https://example.com/release", "sourcePublishedAt": "2026-09-28T19:00:00+08:00", "sourceAuthority": "official" },
+        { "level": "media", "name": "Technology press", "url": "https://news.example.com/story", "sourceAuthority": "secondary" },
+        { "level": "community", "name": "Community discussion", "url": "https://forum.example.com/topic", "sourceAuthority": "community" }
+      ]
+    },
+    {
+      "title": "Repeat report",
+      "type": "model",
+      "signal": "low",
+      "score": 20,
+      "action": "watch",
+      "topic": "agent-systems",
+      "entity": "sample-model",
+      "eventKey": "sample-model:model-release:v1",
+      "canonicalEventType": "model-release",
+      "eventState": "DUPLICATE",
+      "materialChange": false,
+      "duplicate": true,
+      "observedAt": "2026-09-29T09:00:00+08:00",
+      "confidence": "medium",
+      "sources": [{ "level": "research", "name": "Independent lab", "sourceAuthority": "primary" }]
+    },
+    {
+      "title": "Material update",
+      "type": "model",
+      "signal": "low",
+      "score": 20,
+      "action": "watch",
+      "topic": "agent-systems",
+      "entity": "sample-model",
+      "eventKey": "sample-model:model-release:v2",
+      "canonicalEventType": "model-release",
+      "eventState": "UPDATE",
+      "materialChange": true,
+      "duplicate": false,
+      "observedAt": "2026-09-29T09:15:00+08:00",
+      "confidence": "high",
+      "sources": [{ "level": "official", "name": "Release notes" }]
+    }
+  ]
+}

@@ -1,0 +1,1137 @@
+[
+  {
+    "name": "missing eventKey",
+    "expectedError": "REQUIRED_EVENT_FIELD_MISSING",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing canonicalEventType",
+    "expectedError": "REQUIRED_EVENT_FIELD_MISSING",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing eventState",
+    "expectedError": "REQUIRED_EVENT_FIELD_MISSING",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing materialChange",
+    "expectedError": "REQUIRED_EVENT_FIELD_MISSING",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "missing observedAt",
+    "expectedError": "REQUIRED_EVENT_FIELD_MISSING",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid event type",
+    "expectedError": "CANONICAL_EVENT_TYPE_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "tool-discovery",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid event state",
+    "expectedError": "EVENT_STATE_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "SETTLED",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid eventKey",
+    "expectedError": "EVENT_KEY_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "Sample:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "eventKey type mismatch",
+    "expectedError": "EVENT_KEY_TYPE_MISMATCH",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample:release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "NEW duplicate true",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": true,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "NEW materialChange true",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": true,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "DUPLICATE duplicate false",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "DUPLICATE",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "DUPLICATE materialChange true",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "DUPLICATE",
+          "materialChange": true,
+          "duplicate": true,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "UPDATE duplicate true",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "UPDATE",
+          "materialChange": true,
+          "duplicate": true,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "UPDATE materialChange false",
+    "expectedError": "EVENT_STATE_INVARIANT",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "UPDATE",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid observedAt",
+    "expectedError": "OBSERVED_AT_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid eventOccurredAt",
+    "expectedError": "EVENT_OCCURRED_AT_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "yesterday",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid sourcePublishedAt",
+    "expectedError": "SOURCE_PUBLISHED_AT_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "not a timestamp",
+              "sourceAuthority": "official"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "invalid sourceAuthority",
+    "expectedError": "SOURCE_AUTHORITY_INVALID",
+    "report": {
+      "schemaVersion": 2,
+      "scoreVersion": "2.0",
+      "title": "Radar V2.1 Event and Observation fixture",
+      "date": "2026-09-29",
+      "radar": "ai",
+      "signalCount": 1,
+      "highSignalCount": 0,
+      "actionableCount": 0,
+      "verdict": "Valid event-state and time-semantics fixture.",
+      "topics": [
+        "agent-systems"
+      ],
+      "reportConfidence": "high",
+      "publish": false,
+      "highlights": [
+        {
+          "title": "New model release",
+          "type": "model",
+          "signal": "low",
+          "score": 20,
+          "action": "watch",
+          "topic": "agent-systems",
+          "entity": "sample-model",
+          "eventKey": "sample-model:model-release:v1",
+          "canonicalEventType": "model-release",
+          "eventState": "NEW",
+          "materialChange": false,
+          "duplicate": false,
+          "observedAt": "2026-09-29T08:45:00+08:00",
+          "eventOccurredAt": "2026-09-28T18:00:00+08:00",
+          "confidence": "high",
+          "sources": [
+            {
+              "level": "official",
+              "name": "Vendor announcement",
+              "url": "https://example.com/release",
+              "sourcePublishedAt": "2026-09-28T19:00:00+08:00",
+              "sourceAuthority": "verified"
+            },
+            {
+              "level": "media",
+              "name": "Technology press",
+              "url": "https://news.example.com/story",
+              "sourceAuthority": "secondary"
+            },
+            {
+              "level": "community",
+              "name": "Community discussion",
+              "url": "https://forum.example.com/topic",
+              "sourceAuthority": "community"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

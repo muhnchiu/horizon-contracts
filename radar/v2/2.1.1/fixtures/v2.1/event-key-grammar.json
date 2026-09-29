@@ -1,0 +1,33 @@
+{
+  "valid": [
+    { "eventKey": "claude-code:version-update:2.1.281", "canonicalEventType": "version-update" },
+    { "eventKey": "project:version-update:v2.0.0-beta.1", "canonicalEventType": "version-update" },
+    { "eventKey": "project:version-update:2026.09.29", "canonicalEventType": "version-update" },
+    { "eventKey": "project:version-update:1.0_rc1", "canonicalEventType": "version-update" },
+    { "eventKey": "glm:model-release:glm-5.2", "canonicalEventType": "model-release" },
+    { "eventKey": "cve-2026-91776:security-cve:cve-2026-91776", "canonicalEventType": "security-cve" },
+    { "eventKey": "cisa:security-cisa-kev:cve-2025-39964", "canonicalEventType": "security-cisa-kev" },
+    { "eventKey": "project:release:initial", "canonicalEventType": "release" },
+    { "eventKey": "project:skill-release:skillopt", "canonicalEventType": "skill-release" },
+    { "eventKey": "paper:research-release:arxiv-2402.17764", "canonicalEventType": "research-release" },
+    { "eventKey": "project:pricing-change:free-tier", "canonicalEventType": "pricing-change" },
+    { "eventKey": "project:capability-change:voice_mode", "canonicalEventType": "capability-change" },
+    { "eventKey": "vendor:security-advisory:advisory-2026.09", "canonicalEventType": "security-advisory" },
+    { "eventKey": "startup:funding:series-b", "canonicalEventType": "funding" },
+    { "eventKey": "service:incident:outage-2026.09.29", "canonicalEventType": "incident" },
+    { "eventKey": "project:documentation:api-guide-v2", "canonicalEventType": "documentation" }
+  ],
+  "invalid": [
+    "claude-code:version-update:",
+    "claude-code:version-update:.2.1",
+    "claude-code:version-update:2:1",
+    "claude-code:version-update:2/1",
+    "claude-code:version-update:2\\1",
+    "claude-code:version-update:2 1",
+    "claude-code:version-update:版本2.1"
+  ],
+  "collisionPair": [
+    "claude-code:version-update:2.1.281",
+    "claude-code:version-update:2-1-281"
+  ]
+}
